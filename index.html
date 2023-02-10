@@ -5,6 +5,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./CSS/style.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      <title>SCS DIgital Business</title>
 </head>
 <body>
@@ -12,17 +13,17 @@
           <div class="logo">
                <span>SCS</span>
           </div>
-          <nav class="nav__menu">
+          <span class="material-symbols-outlined" onclick="clickMenu()">
+               menu
+          </span>
+          <nav class="nav__menu" id="itens">
                <a href="">Início</a>
                <a href="">Serviços</a>
                <a href="">Quem Somos</a>
                <a href="">Equipe</a>
           </nav>
           <div class="nav__button">
-               <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
+               
                <a href="">Contato</a>
           </div>
      </header>
@@ -40,8 +41,42 @@
           <div class="header__image">
                <img src="./Assets/Banner - SCS 1.png" alt="">
           </div>
-
      </section>
      
+     <!-- ANIMAÇÃO DE SCROLL DO MOUSE -->
+     <div class="mouse__animate">
+          <div class="box" id="azul"></div>
+          <span id="mouse"></span>
+     </div>
+
+     <section class="soluçoes">
+          <h2>A Solução perfeita dos seus negocios </h2>
+          <p>A SCS Digital Business tem  a combinação de serviços e técnicas para ajudar a impulsionar a presença de uma marca no mercado e alcançar seus objetivos de negócios. Desde análise de mercado até campanhas publicitárias, uma solução de agência de marketing pode fornecer tudo o que é necessário para alcançar sucesso na era digital.</p>
+
+          <img src="./Assets/stock 2.png">
+          <img id="verificado"src="./Assets/verificado 3.svg">
+
+          <h3>
+               Conheça nossas Soluções
+          </h3>
+
+          <div class="cards">
+               <div class="card__content">
+                    <div class="content">
+                         <img src="./Assets/card_list.png" alt="">
+                         <h2>Social Media</h2>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+
+    
+     
+
+
+
+<script src="./JS/script.js"></script>
 </body>
 </html>
