@@ -1,0 +1,44 @@
+/* Definição de estilo para o container principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Definição de estilo para o formulário */
+  form {
+    width: 45%;
+  }
+  
+  /* Definição de estilo para a imagem */
+  .image-container {
+    width: 45%;
+  }
+  
+  /* Definição de estilo para os inputs */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+  
+  /* Definição de estilo para o botão de envio */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Definição de estilo para a mensagem de sucesso */
+  .success {
+    color: green;
+    font-weight: bold;
+    display: none;
+  }
+  
