@@ -22,7 +22,6 @@
      padding: 2rem 2rem;
      align-items: center;
      justify-content: space-between;
-     border: solid red 2px;
 }
 
 .nav__menu {
@@ -133,6 +132,39 @@
      height: 350px;
 
 
+
+}
+
+.btn {
+     margin-top: 15px;
+}
+
+.btn1 {
+     width: 94px;
+     height: 32px;
+
+     background: linear-gradient(89.49deg, #001AFF 1.88%, #4A83F2 91.43%);
+     border-radius: 20px;
+     border: none;
+
+     color: #FFF;
+     font-weight: 900;
+     font-size: 15px;
+     line-height: 22px;
+}
+
+.btn2 {
+     width: 94px;
+     height: 32px;
+     background-color: #FFF;
+     border: 1px solid #001AFF;
+     border-radius: 20px;
+
+     font-weight: 900;
+     font-size: 15px;
+     line-height: 22px;
+
+     color: #171717;
 }
 
 /* SCROLL DO MOUSE */
@@ -185,20 +217,20 @@
      display: flex;
      flex-direction: column;
      width: 100vw;
-     margin-top: 2rem;
+     margin-top: 10rem;
      padding: 10px;
      justify-content: center;
      align-items: center;
 }
 
-.soluçoes h2 {
+.solution__content h2 {
      text-align: center;
      font-weight: 900;
-     font-size: 16px;
+     font-size: 24px;
      line-height: 24px;
 }
 
-.soluçoes p {
+.solution__content p {
      font-weight: 400;
      font-size: 14px;
      line-height: 21px;
@@ -209,8 +241,16 @@
      color: #747474;
 }
 
-.soluçoes img {
-     width: 332px;
+
+.solution__image {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.solution__image img {
+     width: 320px;
      height: 295px;
 }
 
@@ -218,55 +258,218 @@
      display: flex;
      width: 20px;
      height: 20px;
+     margin-top: 15px;
 
 }
 
-.soluçoes h3 {
+/* CARDS */
+
+.card__solution h3 {
      text-align: center;
      font-weight: 900;
      font-size: 20px;
      line-height: 30px;
-     margin-top: 2rem;
+     margin: 2rem 0rem;
 
      color: #676666;
 }
 
-.cards {
-     width: 100vw;
+.card__services {
+     width: 318px;
+     height: 213px;
+
+     background: #FFFFFF;
+     box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.18);
+     border-radius: 24px;
+}
+
+
+.swiper-slide {
      display: flex;
      justify-content: center;
      align-items: center;
 }
 
-.card__content {
-     width: 318px;
-     height: 179px;
-     left: 21px;
-     top: 1318px;
-
-     background: #FFFFFF;
-     box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.18);
-     border-radius: 24px
+.card__services {
+     margin: 1rem 1rem;
 }
 
-.content{
+.content__card {
      display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+}
+
+.title {
+     display: flex;
+     width: 80vw;
+     margin: 1rem 0rem;
+     padding: 0rem 1rem;
+     position: absolute;
+}
+
+.title img {
+     width: 16px;
+     height: 15px;
+     margin-right: 15px;
+}
+
+.title span {
+     font-weight: 900;
+     font-size: 12px;
+     line-height: 18px;
+     text-align: center;
+
+     color: #171717;
+
+}
+
+.text p {
+     color: #AAAAAA;
+     font-weight: 400;
+     font-size: 11px;
+     line-height: 16px;
+     padding: 10px;
+     margin-top: 3rem;
+     text-align: center;
+
+     position: relative;
+}
+
+.text__align {
+     margin-top: 3.5rem !important;
+}
+
+.btn__card {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 10rem;
+     position: absolute;
+}
+
+.btn__card button {
+     padding: 5px;
+     background: #199EFF;
+     border-radius: 20px;
+     color: #FFF;
+     font-size: 10px;
+
+     border: none;
+}
+
+.btn__card button:hover {
+     background-color: #171717;
+}
+
+/* BOTÕES DE NAVEGAÇÃO */
+
+
+
+
+/* About us */
+.about-us {
+     width: 100vw;
+     height: 235px;
+     background-image: url(../Assets/banner-header\ 2.png);
+     backdrop-filter: 1 #fff;
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 0 10px;
+}
+
+.about-us h2 {
+     text-align: center;
+     font-weight: 900;
+     font-size: 15px;
+     line-height: 22px;
+     padding-top: 23px;
+
+     color: #FFFFFF;
+}
+
+.about-us p {
+     text-align: center;
+     font-weight: 600;
+     font-size: 7px;
+     line-height: 10px;
+     text-align: center;
+     padding-top: 12px;
+
+     color: #FFFFFF;
+
+}
+
+.title__container {
+     display: flex;
+     justify-content: center;
+}
+
+.title__squad__container h2 {
+     font-weight: 900;
+     font-size: 15px;
+     line-height: 22px;
+
+
+     color: #171717;
+}
+
+/* SLIDE EQUIPE */
+
+.card__squad {
+     width: 285px;
+     height: 252px;
+     background: #171717;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+     border-radius: 16px;
+}
+
+.image__squad {
+     display: flex;
+     justify-content: center;
+}
+
+.image__squad img {
+     width: 120px;
+     height: 119px;
+     border-radius: 50%;
+}
+
+
+.title__text {
+     display: flex;
+     flex-direction: column;
      align-items: center;
 }
 
-.content img {
-     width: 29px;
-     height: 29px;
-     margin-left: 2rem;
-     margin-top: 1rem;
+.title__text h3 {
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 36px;
+
+     color: #FFFFFF;
+
 }
 
-.content h2 {
-     text-align: center;
-     font-weight: 900;
-     font-size: 16px;
-     line-height: 24px;
-     margin: 1rem 3rem;
+.title__text p {
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 18px;
 
-     color: #000000;
+     color: #CECECE;
+}
+
+.circle__content{
+     display: flex;
+     gap: 5px;
+     margin: 1rem 1rem;
+}
+
+.circle{
+     width: 10px;
+     height: 10px;
+     background-color: #ffffff;
+     border-radius: 50%;
+
 }

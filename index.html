@@ -1,82 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="./CSS/style.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-     <title>SCS DIgital Business</title>
-</head>
-<body>
-     <header class="header__menu">
-          <div class="logo">
-               <span>SCS</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- CSS SWIPPER -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>SCS DIgital Business</title>
+  </head>
+  <body>
+    <header class="header__menu">
+      <div class="logo">
+        <span>SCS</span>
+      </div>
+      <span class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+      </span>
+      <nav class="nav__menu" id="itens">
+        <a href="">Início</a>
+        <a href="">Serviços</a>
+        <a href="">Quem Somos</a>
+        <a href="">Equipe</a>
+      </nav>
+      <div class="nav__button">
+        <a href="">Contato</a>
+      </div>
+    </header>
+    <section class="header__content">
+      <div class="text__content">
+        <span class="text__welcome">Welcome to SCS </span>
+        <h1 class="text__title">
+          Cuide da sua empresa e deixe que cuidamos do seu negócio no marketing
+          digital!
+        </h1>
+        <p>
+          Aproveite a experiência e a excelência da Agência de Marketing para
+          expandir sua marca e atingir novos patamares de sucesso no mercado.
+        </p>
+      </div>
+
+      <div class="btn">
+        <button class="btn1">Portifolio</button>
+        <button class="btn2">Serviços</button>
+      </div>
+
+      <!-- ANIMAÇÃO DE SCROLL DO MOUSE -->
+
+      <div class="mouse__animate">
+        <div class="box" id="azul"></div>
+        <span id="mouse"></span>
+      </div>
+
+      <div class="header__image">
+        <img src="./Assets/Banner - SCS 1.png" alt="" />
+      </div>
+    </section>
+
+    <section class="soluçoes">
+      <div class="solution__content">
+        <h2>A Solução perfeita dos seus negocios</h2>
+        <p>
+          A SCS Digital Business tem a combinação de serviços e técnicas para
+          ajudar a impulsionar a presença de uma marca no mercado e alcançar
+          seus objetivos de negócios. Desde análise de mercado até campanhas
+          publicitárias, uma solução de agência de marketing pode fornecer tudo
+          o que é necessário para alcançar sucesso na era digital.
+        </p>
+      </div>
+
+      <div class="solution__image">
+        <img src="./Assets/stock 2.png" alt="" />
+        <img id="verificado" src="./Assets/verificado 3.svg" />
+      </div>
+
+      <div class="card__solution">
+        <h3>Conheça nossas Soluções</h3>
+      </div>
+      
+    </section>
+
+    <!-- Swiper -->
+    <div class="swiper services">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+          <!-- card1 -->
+          <div class="card__services">
+            <div class="content__card">
+              <div class="title">
+                <img src="./Assets/card_list.png"
+                 alt="">
+                 <span>Crie o Marketing de Conteúdo do negócio.</span>
+              </div>
+              <div class="text">
+                <p class="text__align">Com um marketing de conteúdo definido, é hora de movimentar e engajar as redes sociais do seu negócio, usamos as estratégias certas de acordo com a sua persona.</p>
+              </div>
+              <div class="btn__card">
+                <button>Sabiba mais</button>
+              </div>
+            </div>
           </div>
-          <span class="material-symbols-outlined" onclick="clickMenu()">
-               menu
-          </span>
-          <nav class="nav__menu" id="itens">
-               <a href="">Início</a>
-               <a href="">Serviços</a>
-               <a href="">Quem Somos</a>
-               <a href="">Equipe</a>
-          </nav>
-          <div class="nav__button">
-               
-               <a href="">Contato</a>
+        </div>
+
+        <!-- card2 -->
+        <div class="swiper-slide">
+          <div class="card__services">
+            <div class="content__card">
+              <div class="title">
+                <img src="./Assets/card_list.png"
+                 alt="">
+                 <span>Aumente suas vendas usando as estratégias certas.</span>
+              </div>
+              <div class="text">
+                <p>Para a atração do público, utilizamos ações de marketing. Fazemos o estudo de todas as palavras chaves, otimizamos o SEO, criamos campanhas de anúncios onlines, produzimos conteúdos de valor e utilizamos as redes sociais para a distribuição contínua.</p>
+              </div>
+              <div class="btn__card">
+                <button>Sabiba mais</button>
+              </div>
+            </div>
           </div>
-     </header>
-     <section class="header__content">
-          <div class="text__content">
-               <span class="text__welcome">Welcome to SCS
-               </span>
-               <h1 class="text__title">
-                    Cuide da sua empresa e deixe que cuidamos do seu negócio no marketing digital!
-               </h1>
-               <p>
-                    Aproveite a experiência e a excelência da Agência de Marketing para expandir sua marca e atingir novos patamares de sucesso no mercado.
-               </p>
+        </div>
+
+        <!-- card3 -->
+        <div class="swiper-slide">
+          <div class="card__services">
+            <div class="content__card">
+              <div class="title">
+                <img src="./Assets/card_list.png"
+                 alt="">
+                 <span>Crie seu site e aumente seus leads.</span>
+              </div>
+              <div class="text">
+                <p>Uma das partes mais importantes na conversão de leads é um site bem estruturado. E através de matérias como e-books, checklists, webinários, ofertas especiais e landing pages de alta conversão construímos uma base qualificada para seu negócio.</p>
+              </div>
+              <div class="btn__card">
+                <button>Sabiba mais</button>
+              </div>
+            </div>
           </div>
-          <div class="header__image">
-               <img src="./Assets/Banner - SCS 1.png" alt="">
+        </div>
+
+        <!-- card4 -->
+        <div class="swiper-slide">
+          <div class="card__services">
+            <div class="content__card">
+              <div class="title">
+                <img src="./Assets/card_list.png"
+                 alt="">
+                 <span>Potencialize sua lista de contatos.</span>
+              </div>
+              <div class="text">
+                <p class="text__align">Com uma boa ferramenta de e-mail ativa mantemos o relacionamento com os leads quentes, aumentando a chance de conversão e retenção. Gerando vendas contínuas.</p>
+              </div>
+              <div class="btn__card">
+                <button>Sabiba mais</button>
+              </div>
+            </div>
           </div>
-     </section>
-     
-     <!-- ANIMAÇÃO DE SCROLL DO MOUSE -->
-     <div class="mouse__animate">
-          <div class="box" id="azul"></div>
-          <span id="mouse"></span>
-     </div>
+        </div>
 
-     <section class="soluçoes">
-          <h2>A Solução perfeita dos seus negocios </h2>
-          <p>A SCS Digital Business tem  a combinação de serviços e técnicas para ajudar a impulsionar a presença de uma marca no mercado e alcançar seus objetivos de negócios. Desde análise de mercado até campanhas publicitárias, uma solução de agência de marketing pode fornecer tudo o que é necessário para alcançar sucesso na era digital.</p>
-
-          <img src="./Assets/stock 2.png">
-          <img id="verificado"src="./Assets/verificado 3.svg">
-
-          <h3>
-               Conheça nossas Soluções
-          </h3>
-
-          <div class="cards">
-               <div class="card__content">
-                    <div class="content">
-                         <img src="./Assets/card_list.png" alt="">
-                         <h2>Social Media</h2>
-                    </div>
-               </div>
+        <!-- card5 -->
+        <div class="swiper-slide">
+          <div class="card__services">
+            <div class="content__card">
+              <div class="title">
+                <img src="./Assets/card_list.png"
+                 alt="">
+                 <span>Aumente a taxa de conversão com uma página de destino.</span>
+              </div>
+              <div class="text">
+                <p class="text__align">Com uma landing page de alta conversão, construímos uma base de leads quentes com o poder de conversão. Com isso, aumentam as chances de vendas!</p>
+              </div>
+              <div class="btn__card">
+                <button>Sabiba mais</button>
+              </div>
+            </div>
           </div>
-     </section>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <br><br>
+
+    <section class="about-us">
+      <h2>
+        Sobre nós
+      </h2>
+      <p>A SCS Digital Business tem o objetivo de apoiar empresas de diversos segmentos que desejam crescer e ter destaque no mercado. Há 3 anos no mercado de marketing somos uma agência que acredita que nascemos para vencer. Buscamos a maior quantidade de informações sobre o seu negócio com o intuito de formar uma base de dados que permita repercutir de maneira positiva para alcançarmos resultados extraordinários. Utilizamos a tecnologia para buscar os dados sobre a sua empresa e construímos a melhor estratégia para o seu negócio. Com o Inbound Marketing conseguimos estabelecer quem é o seu potencial cliente e trabalhar com esse público para gerar leads. Ter em mãos todas essas informações sobre a sua empresa é essencial para ter destaque entre a concorrência. Com o nosso Fazer Acontecer podemos ajudar nossos clientes a tomarem as melhores decisões visando o desenvolvimento da empresa. Realizamos um planejamento estratégico para definir os objetivos e metas da empresa em longo prazo, gerando informações ágeis e precisas que proporcionam uma tomada de decisões muito mais rápida e assertiva auxiliando nossos clientes a vencerem os desafios que podem surgir durante sua trajetória.
+        Sabemos Fazer Acontecer!
+        E Você, Vai Entrar na Luta Conosco? Nós Podemos Fazer Tudo!</p>
+    </section>
+    <br><br>
+
+    <section class="Squad">
+      <div class="title__container">
+        <h2 class="title__squad__container">Nossa Equipe</h2>
+      </div>
+    </section>
+      
+    <div class="swiper squad">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card__squad">
+            <div class="content__squad">
+              <div class="circle__content">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="image__squad">
+                <img src="./Assets/david.png" alt="">
+              </div>
+              <div class="title__text">
+                <h3>David</h3>
+                <p>Desenvolvedor de Software</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <br><br>
 
 
-
-    
-     
+</span>
 
 
+    <script src="./JS/script.js"></script>
+    <script src="./JS/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".services", {
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5555500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
-<script src="./JS/script.js"></script>
-</body>
+      // Sile equipe
+
+      var swiper = new Swiper(".squad", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5555500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+  </body>
 </html>

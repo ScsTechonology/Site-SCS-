@@ -1,17 +1,17 @@
 // SCROLL DO MOUSE
 
-function clickMenu(){
-	
-	if(itens.style.display  == 'block'){
-	   itens.style.display  = 'none'
+function clickMenu() {
+
+	if (itens.style.display == 'block') {
+		itens.style.display = 'none'
 	} else {
 		itens.style.display = 'block'
 	}
-	
-	
+
+
 }
 
-$(document).scroll(function() {
+$(document).scroll(function () {
 	var documentTop = $(this).scrollTop();
 
 	if (documentTop > boxTop('#azul') - 120) {
@@ -20,5 +20,4 @@ $(document).scroll(function() {
 		$('#azul').removeClass('animar');
 	}
 });
-
 
